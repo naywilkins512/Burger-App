@@ -8,14 +8,14 @@ let burger = {
         })
     },
 
-    insertOne: function (cb) {
-        orm.insertOne("burgers", "burger_name", "Double Cheez", function (res) {
+    insertOne: function (tablevalue, cb) {
+        orm.insertOne("burgers", "burger_name", tablevalue, function (res) {
             cb(res)
         })
     },
 
-    updateOne: function (cb) {
-        orm.updateOne("burgers", "burger_name", req.body.plan, req.params.id, function (res) {
+    updateOne: function (condition, cb) {
+        orm.updateOne("burgers", "burger_name", condition, function (res) {
             cb(res)
         });
 
