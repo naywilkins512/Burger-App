@@ -8,6 +8,7 @@ $(function () {
         let newDevouredState = {
             devoured: newDevoured
         };
+        console.log("New devoured data: "+newDevouredState);
 
         // Send the PUT request.
         $.ajax("/api/burgers/" + id, {
@@ -30,6 +31,7 @@ $(function () {
             name: $("#newBurger").val().trim(),
             devoured: $("[name=devoured]:checked").val().trim()
         };
+        console.log("New Burger Data: "+newBurger);
 
         // Send the POST request.
         $.ajax("/api/burgers", {
