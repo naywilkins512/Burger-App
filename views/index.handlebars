@@ -5,7 +5,7 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-    
+
     <button class="change-devoured" data-id ="{{id}}" data-newDevoured="{{devoured}}">EAT DA BURGER</button>
     {{/unless}}
   {{/each}}
@@ -27,6 +27,12 @@
   <div class="form-group">
     <label for="newBurger">Burger Name:</label>
     <input type="text" id="newBurger" name="burger_name">
+  </div>
+
+    <div class="form-group">
+    <label for="devour">Has this burger been devoured?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+    <input type="radio" name="devoured" value="0"> Not yet Devoured!
   </div>
 
   <button type="submit">Add Burger</button>
