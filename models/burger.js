@@ -1,4 +1,4 @@
-let orm = require("../config/orm")
+let orm = require("../config/orm.js")
 
 let burger = {
 
@@ -8,14 +8,14 @@ let burger = {
         })
     },
 
-    insertOne: function (tablevalue, cb) {
-        orm.insertOne("burgers", "burger_name", tablevalue, function (res) {
+    insertOne: function (cols, vals, cb) {
+        orm.insertOne("burgers", cols, vals, function (res) {
             cb(res)
         })
     },
 
-    updateOne: function (condition, cb) {
-        orm.updateOne("burgers", "burger_name", condition, function (res) {
+    updateOne: function (objColVals, condition, cb) {
+        orm.updateOne("burgers", objColVals, condition, function (res) {
             cb(res)
         });
 
