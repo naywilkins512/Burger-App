@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(156, 51, 72);
+    background-color: rgb(165, 229, 248);
     margin: auto;
     /* align-content: center; */
     text-align: center;
@@ -7,4 +7,13 @@ body {
 
 img {
     width: 60px;
+}
+
+.info-box {
+    background-color: linen;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
 }

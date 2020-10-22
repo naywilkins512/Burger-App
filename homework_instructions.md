@@ -149,11 +149,11 @@ Having an active and healthy commit history on GitHub is important for your futu
 
      <!-- * Create the `main.handlebars` file inside `layouts` directory. -->
 
-* Setup the `main.handlebars` file so it's able to be used by Handlebars.
+<!-- * Setup the `main.handlebars` file so it's able to be used by Handlebars. -->
 
-* Setup the `index.handlebars` to have the template that Handlebars can render onto.
+<!-- * Setup the `index.handlebars` to have the template that Handlebars can render onto. -->
 
-* Create a button in `index.handlebars` that will submit the user input into the database.
+<!-- * Create a button in `index.handlebars` that will submit the user input into the database. -->
 
 #### Directory structure
 
