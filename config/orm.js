@@ -38,7 +38,7 @@ let orm = {
     });
   },
 
-  // Adds a burger to the database
+  // Adds burger to db
   insertOne: function(table, cols, vals, cb) {
     let queryString = "INSERT INTO " + table;
 
@@ -60,7 +60,7 @@ let orm = {
     });
   },
 
-  // Change a burger's devoured state
+  // Change burger's devoured state
   updateOne: function(table, objColVals, condition, cb) {
     let queryString = "UPDATE " + table;
 
